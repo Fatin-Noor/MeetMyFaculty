@@ -1,0 +1,81 @@
+:root {
+  --blue: #1257a6;
+  --navy: #102a43;
+  --light-blue: #eaf3ff;
+  --border: #d7e0ea;
+  --green: #14804a;
+  --red: #b42318;
+  --text: #243b53;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: #f5f8fc;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+
+header { margin-bottom: 24px; }
+h1, h2 { color: var(--navy); margin: 0 0 8px; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.25rem; }
+.eyebrow { color: var(--blue); font-weight: bold; margin: 0 0 6px; }
+.hint { margin: 0 0 20px; color: #526d82; }
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(16, 42, 67, 0.06);
+}
+
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+label { display: grid; gap: 7px; font-weight: bold; font-size: 0.92rem; }
+input, select {
+  width: 100%;
+  border: 1px solid #aab9c8;
+  border-radius: 7px;
+  padding: 10px;
+  font: inherit;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--blue);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #0d4789; }
+button.secondary { background: #61758a; }
+button.small { margin: 3px; padding: 7px 10px; font-size: 0.78rem; }
+button.approve { background: var(--green); }
+button.reject { background: var(--red); }
+
+.message { min-height: 20px; margin: 12px 0 0; font-weight: bold; color: var(--green); }
+.section-heading { display: flex; justify-content: space-between; align-items: start; gap: 20px; }
+.section-heading input { max-width: 280px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 700px; }
+th, td { padding: 12px; border-bottom: 1px solid var(--border); text-align: left; }
+th { background: var(--light-blue); color: var(--navy); }
+.status { font-weight: bold; }
+.pending { color: #9a6700; }
+.approved { color: var(--green); }
+.rejected, .inactive { color: var(--red); }
+.empty { text-align: center; color: #526d82; padding: 22px; }
+
+@media (max-width: 700px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .section-heading { flex-direction: column; }
+  .section-heading input { max-width: none; }
+}
