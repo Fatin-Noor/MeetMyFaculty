@@ -1,3 +1,4 @@
+// Module 3 - Function 9: Academic Discussion Forum | Owner: Fatin Noor Hoque (Member 1)
 import React, { useEffect, useState } from "react";
 import { forumApi } from "../api/services";
 import { useAuth } from "../context/AuthContext";

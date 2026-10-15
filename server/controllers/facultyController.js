@@ -1,3 +1,5 @@
+// Module 3 - Function 12: Faculty Directory and Profile Viewer
+// Owner: Makib (Member 3)
 const facultyService = require("../services/facultyService");
 
 async function getFaculty(req, res, next) {

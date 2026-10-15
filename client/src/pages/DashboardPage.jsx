@@ -1,3 +1,4 @@
+// Module 1 - Function 3: Home Page and Dashboard | Owner: Makib (Member 3)
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { announcementApi, counselingApi, resourceApi, userApi } from "../api/services";

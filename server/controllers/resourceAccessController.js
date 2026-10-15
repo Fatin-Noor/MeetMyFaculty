@@ -1,3 +1,5 @@
+// Module 3 - Function 11: Resource Access Approval
+// Owner: Makib (Member 3)
 const resourceService = require("../services/resourceService");
 
 async function createAccessRequest(req, res, next) {

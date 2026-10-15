@@ -1,3 +1,4 @@
+// Module 3 - Function 12: Faculty Directory and Profile Viewer | Owner: Makib (Member 3)
 import React, { useEffect, useState } from "react";
 import { facultyApi } from "../api/services";
 import { Empty, Loading, Notice } from "../components/UI";

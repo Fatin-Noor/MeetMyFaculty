@@ -1,3 +1,5 @@
+// Module 3 - Function 10: Semester Resource Sharing
+// Owner: Redoan Hasan Rafin (Member 2)
 const resourceService = require("../services/resourceService");
 
 function canManageResource(resource, user) {

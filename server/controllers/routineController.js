@@ -1,3 +1,5 @@
+// Module 2 - Function 5: Class Routine Viewer
+// Owner: Fatin Noor Hoque (Member 1)
 const routineService = require("../services/routineService");
 
 async function getRoutines(req, res, next) {

@@ -1,3 +1,5 @@
+// Module 2 - Function 8: Announcement Management
+// Owner: Redoan Hasan Rafin (Member 2)
 const announcementService = require("../services/announcementService");
 
 async function getAnnouncements(req, res, next) {

@@ -4,7 +4,8 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import HomePage from "./pages/HomePage";
-import AuthPage from "./pages/AuthPage";
+import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import ProfilePage from "./pages/ProfilePage";
 import UserManagementPage from "./pages/UserManagementPage";
@@ -25,8 +26,8 @@ function Public({ children }) { return <Layout>{children}</Layout>; }
 export default function App() {
   return <AuthProvider><BrowserRouter><Routes>
     <Route path="/" element={<Public><HomePage /></Public>} />
-    <Route path="/login" element={<Public><AuthPage mode="login" /></Public>} />
-    <Route path="/register" element={<Public><AuthPage mode="register" /></Public>} />
+    <Route path="/login" element={<Public><LoginPage /></Public>} />
+    <Route path="/register" element={<Public><RegisterPage /></Public>} />
     <Route path="/dashboard" element={<Private><DashboardRedirect /></Private>} />
     <Route path="/profile" element={<Private><ProfilePage /></Private>} />
     <Route path="/admin/users" element={<Private roles={["admin"]}><UserManagementPage /></Private>} />

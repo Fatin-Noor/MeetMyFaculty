@@ -1,3 +1,4 @@
+// Module 3 - Functions 10-11: Semester Resource Sharing and Resource Access Approval | Owners: Redoan Hasan Rafin and Makib
 import React, { useEffect, useState } from "react";
 import { resourceApi } from "../api/services";
 import { useAuth } from "../context/AuthContext";

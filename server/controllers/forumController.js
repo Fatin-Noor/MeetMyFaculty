@@ -1,3 +1,5 @@
+// Module 3 - Function 9: Academic Discussion Forum
+// Owner: Fatin Noor Hoque (Member 1)
 const forumService = require("../services/forumService");
 
 async function getPosts(req, res, next) {

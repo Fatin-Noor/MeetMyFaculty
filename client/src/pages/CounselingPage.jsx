@@ -1,3 +1,4 @@
+// Module 2 - Shared integration page for Functions 6-7: Slot Booking (Rafin) and Request Management (Makib)
 import React, { useEffect, useState } from "react";
 import { counselingApi } from "../api/services";
 import { useAuth } from "../context/AuthContext";
